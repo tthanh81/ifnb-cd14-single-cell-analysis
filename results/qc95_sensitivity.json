@@ -1,0 +1,17 @@
+{
+  "primary_qc_threshold_pct": 90,
+  "sensitivity_qc_threshold_pct": 95,
+  "n_added_cells": 3,
+  "n_added_umi_filtered": 11292,
+  "n_tested_genes": 3697,
+  "n_primary_fdr05": 2502,
+  "n_qc95_fdr05": 2504,
+  "n_significant_both": 2501,
+  "n_lost_fdr": 1,
+  "n_gained_fdr": 3,
+  "n_primary_sign_reversals": 0,
+  "median_abs_logfc_change_primary": 0.0009090423756699106,
+  "max_abs_logfc_change_primary": 0.3131812633564497,
+  "method": "edgeR 4.10.7 paired QL, robust, nonlegacy",
+  "primary_analysis_modified": false
+}

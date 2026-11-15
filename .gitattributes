@@ -1,0 +1,5 @@
+* text=auto eol=lf
+results/** -text
+docs/stage0* -text
+docs/*_r_session.txt whitespace=-blank-at-eol
+*.png binary

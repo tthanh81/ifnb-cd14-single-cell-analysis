@@ -1,0 +1,13 @@
+{
+  "stage": "06_interferon_donor_expression",
+  "status": "PASS",
+  "n_genes": 135,
+  "n_donors": 8,
+  "n_paired_comparisons": 1080,
+  "normalization": "edgeR TMM",
+  "expression_scale": "log2 CPM",
+  "prior_count": 2,
+  "gene_pair_table_sha256": "ac550ff4bbe77792d59c2bca22a49b84bfb6a050aeaccdc314dfaa9ed53785c9",
+  "gene_summary_sha256": "3f722b03a7c6eb89ac25c7d12938926a524716f68d25ebcfae798b15ed9feec8",
+  "new_hypothesis_tests": false
+}

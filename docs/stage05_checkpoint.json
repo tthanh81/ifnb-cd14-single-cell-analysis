@@ -1,0 +1,106 @@
+{
+  "stage": "05_paired_differential_expression",
+  "checkpoint": "PASS",
+  "r_version": "4.6.1",
+  "edger_version": "4.10.7",
+  "primary_analysis": {
+    "cell_type": "CD14+ Monocytes (source annotation)",
+    "cohort_status": "candidate_pre_DE",
+    "samples": 16,
+    "paired_donors": 8,
+    "genes_tested": 3697,
+    "normalization": "TMM",
+    "design": "~ donor_id + condition",
+    "contrast": "stim_vs_ctrl",
+    "ql_robust": true,
+    "ql_legacy": false,
+    "fdr_method": "BH",
+    "fdr_threshold": 0.05,
+    "n_fdr05": 2502,
+    "n_positive_logfc_fdr05": 1250,
+    "n_negative_logfc_fdr05": 1252
+  },
+  "robustness": {
+    "lodo_folds": 8,
+    "primary_genes_same_sign_all_folds": 2502,
+    "primary_genes_fdr05_all_folds": 2161,
+    "qc80_identical_to_qc90": true,
+    "qc95_added_cells": 3,
+    "qc95_added_umi_fixed_genes": 11292,
+    "qc95_fdr05": 2504,
+    "qc95_significant_overlap": 2501,
+    "qc95_fdr_lost": 1,
+    "qc95_fdr_gained": 3,
+    "qc95_primary_sign_reversals": 0,
+    "qc95_median_abs_logfc_change": 0.000909
+  },
+  "limitations": [
+    "Condition is perfectly confounded with source capture.",
+    "Source CD14+ labels are not independent identity validation.",
+    "Only eight biological donor pairs.",
+    "QC threshold sensitivity was examined after the primary DE results.",
+    "LODO folds are not independent biological validation cohorts."
+  ],
+  "artifacts": {
+    "primary_unfiltered_h5ad": {
+      "filename": "ifnb_cd14_pseudobulk_unfiltered.h5ad",
+      "sha256": "3e252d323075a2c0ac81b0150b4169f3ecd37f43ed9461880457fc709d997e2d",
+      "file_size_bytes": 3203513
+    },
+    "primary_filtered_h5ad": {
+      "filename": "ifnb_cd14_pseudobulk_gene_filtered.h5ad",
+      "sha256": "3e72d3088185890d80d5ab519ce55fd9fa7731860c0f5bc125ecb773e5805cd2",
+      "file_size_bytes": 677873
+    },
+    "tmm_dgelist": {
+      "filename": "ifnb_cd14_edger_tmm.rds",
+      "sha256": "e572bda5ffe3ef5e6c8d38c84a4d94d1b12c25a78d4cece09adcde5837b97af5",
+      "file_size_bytes": 105837
+    },
+    "primary_ql_fit": {
+      "filename": "ifnb_cd14_edger_paired_ql_fit.rds",
+      "sha256": "de94e3aa7cb4e5d0e7e54f2226dc64ecea38037c98d197bd32222c34a5dcca5b",
+      "file_size_bytes": 1390665
+    },
+    "primary_ql_test": {
+      "filename": "ifnb_cd14_edger_paired_qlf.rds",
+      "sha256": "b66daf7d87bfd1e8af5da57d3122f375535dfd793412027449d1a6a118a2213c",
+      "file_size_bytes": 1332089
+    },
+    "primary_de_results": {
+      "filename": "stage05_paired_qlf_all_genes.tsv",
+      "sha256": "48e26a2dc3a08b4273eb4636696ac372a672e14329aa9e1c7c92c756f6813a1f",
+      "file_size_bytes": 397736
+    },
+    "lodo_gene_results": {
+      "filename": "stage05_lodo_all_folds.tsv.gz",
+      "sha256": "80dd24052f6c15912c84cec2c9c6ecf5d7dce9c4791cf17fc68ef671753d8a64",
+      "file_size_bytes": 914587
+    },
+    "qc95_unfiltered_h5ad": {
+      "filename": "ifnb_cd14_pseudobulk_qc95_unfiltered.h5ad",
+      "sha256": "565cb8c57cd5cc181015fb390008ea227a9a5d22be52e9932f179c66659ad359",
+      "file_size_bytes": 3208307
+    },
+    "qc95_fixed_genes_h5ad": {
+      "filename": "ifnb_cd14_pseudobulk_qc95_fixed_genes.h5ad",
+      "sha256": "143ea946a86d82aafe224ba6f636f6d3fc28a2885398225454d35aacae9997d0",
+      "file_size_bytes": 676449
+    },
+    "qc95_ql_model": {
+      "filename": "ifnb_cd14_qc95_paired_qlf.rds",
+      "sha256": "d2d795bb0c3e195534445713e1e773f7b17bf18bc7ef7f54c6d2c991eeeae250",
+      "file_size_bytes": 2722077
+    },
+    "qc95_de_results": {
+      "filename": "stage05_qc95_qlf_all_genes.tsv",
+      "sha256": "fe399e1dd2a248a02eebe2644e723de6fbef645016dae41c979a65a692c4fe84",
+      "file_size_bytes": 397838
+    },
+    "r_session": {
+      "filename": "stage05_r_session_info.txt",
+      "sha256": "ee9cfae8abb36477e5a97edb8ae1cb2dd033e3f0edce9a0e1dc9315d2d798d39",
+      "file_size_bytes": 1004
+    }
+  }
+}

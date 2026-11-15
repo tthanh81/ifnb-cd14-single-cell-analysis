@@ -1,0 +1,10 @@
+# References
+
+- Kang HM, Subramaniam M, Targ S, et al. *Multiplexed droplet single-cell RNA-sequencing using natural genetic variation*. Nature Biotechnology 36, 89–94 (2018). [Original study](https://www.nature.com/articles/nbt.4042)
+- NCBI Gene Expression Omnibus. GSE96583, batch 2. The related `Kang18_8vs8` experiment is documented in muscData. [GEO series](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE96583) · [muscData vignette](https://bioconductor.org/packages/release/data/experiment/vignettes/muscData/inst/doc/muscData.html)
+- Chen Y, Chen L, Lun ATL, et al. *edgeR: Empirical Analysis of Digital Gene Expression Data in R*, v4.10.7. [Bioconductor documentation and user guide](https://bioconductor.org/packages/edgeR)
+- Korotkevich G, Sukhov V, Golikov N, and Sergushichev A. *fgsea: Fast Gene Set Enrichment Analysis*, v1.38.0. [Bioconductor documentation](https://bioconductor.org/packages/fgsea)
+- Liberzon A, Birger C, Thorvaldsdóttir H, et al. *The Molecular Signatures Database Hallmark Gene Set Collection*. Cell Systems 1, 417–425 (2015). [Hallmark collection paper](https://doi.org/10.1016/j.cels.2015.12.004) · [MSigDB 2026.1.Hs release notes](https://docs.gsea-msigdb.org/MSigDB/Release_Notes/MSigDB_2026.1.Hs/) · [msigdbr documentation](https://igordot.github.io/msigdbr/reference/msigdbr.html)
+- Selected functional annotations used in Stage 06. [NCBI Gene IRF7](https://www.ncbi.nlm.nih.gov/gene/3665) · [NCBI Gene SOCS1](https://www.ncbi.nlm.nih.gov/gene/8651) · [Reactome interferon alpha/beta signaling](https://reactome.org/content/detail/R-HSA-909733)
+
+GEO hosts the original sequencing-derived data, and Stage 01 downloads the six required supplements from NCBI. Stage 06 retrieves the Hallmark source collection through msigdbr. The distributed Hallmark result tables contain study-derived scores and leading-edge subsets from the ranked genes, using MSigDB 2026.1.Hs from Broad Institute, MIT and the Regents of the University of California. [MSigDB license terms](https://www.gsea-msigdb.org/gsea/msigdb_license_terms.jsp) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)

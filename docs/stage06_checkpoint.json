@@ -1,0 +1,20 @@
+{
+  "section": "Stage 06 Results",
+  "tested_genes": 3697,
+  "de_fdr05": 2502,
+  "de_positive": 1250,
+  "de_negative": 1252,
+  "hallmarks_tested": 41,
+  "hallmarks_fdr05": 13,
+  "positive_nes": 8,
+  "negative_nes": 5,
+  "interferon_unique_leading_genes": 135,
+  "interferon_shared_leading_genes": 60,
+  "donors": 8,
+  "immune_unique_leading_genes": 147,
+  "remaining_hallmark_unique_leading_genes": 144,
+  "new_statistical_tests": false,
+  "condition_capture_confounding": true,
+  "source_de_sha256": "48e26a2dc3a08b4273eb4636696ac372a672e14329aa9e1c7c92c756f6813a1f",
+  "source_gsea_sha256": "b238825193cf8d24a7e61ff1a6cee4995471c2f0074252e7867e605c5ac2e35d"
+}
